@@ -39,8 +39,9 @@ h1 {
 }
 
 .sidebar nav ul li a,
-.library-title,
-.library-add {
+.library-button,
+.library-add,
+.playlist-section-content {
     color: #b3b3b3;
     text-decoration: none;
     font-weight: 600;
@@ -48,24 +49,100 @@ h1 {
     font-family: "DM Sans", sans-serif;
 }
 
-.sidebar nav ul li a :hover,
-.library-title :hover,
+.sidebar nav ul li a:hover,
+.library-content button:hover,
 .library-add :hover {
     color: #fff;
 }
 
 .sidebar-library {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin-top: 12px;
     padding: 16px 16px 0 16px;
 }
 
-.library-title,
+.sidebar-library .library-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.library-button,
 .library-add {
-    padding: 0 20px 10px 20px;
+    background-color: transparent;
+    border: 0px;
+    text-align: center;
+    text-transform: none;
+    font-weight: 700;
+    padding: 20px 20px;
 }
 
 .logo-spotify img {
     width: 80px;
+}
+
+.playlist-section {
+    display: flex;
+    background-color: #242424;
+    border-radius: 16px;
+}
+
+.playlist-section .playlist-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 20px;
+}
+
+.playlist-section-content .title {
+    font-weight: 700;
+}
+
+.playlist-section-content .subtitle {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.playlist-section-content .playlist-section-button {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    border: 0px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    padding: 10px;
+    margin-top: 6px;
+    width: 116px;
+}
+
+.sidebar-library .cookies {
+    margin: 20px;
+}
+
+.sidebar-library .cookies a {
+    color: #b3b3b3;
+    font-weight: 500;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.sidebar-library .cookies a:hover {
+    text-decoration: underline;
+}
+
+.sidebar-library .languages .languages-button {
+    border: 1px solid #878787;
+    border-radius: 16px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100px;
+    margin: 16px 20px;
+    padding: 8px;
 }
