@@ -199,12 +199,39 @@
     background-color: #8e66ac;
 }
 
+.card-11 {
+    background-color: #e61e32;
+}
+
+.card-12 {
+    background-color: #1e3264;
+}
+
+.card-13 {
+    background-color: #8d67ab;
+}
+
+.card-14 {
+    background-color: #e61e32;
+}
+
+.card-15 {
+    background-color: #148a08;
+}
+
 .results {
     display: none;
 }
 
 .results .results-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #181818;
+}
+
+.results .results-layout img {
+    align-self: center;
 }
 
 .results .results-grid a:hover {
@@ -215,6 +242,8 @@
 }
 
 .results-layout .artist-img {
+    width: 11vw;
+    height: 22vh;
     border-radius: 50%;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
@@ -234,7 +263,7 @@
 .play-artist .fa-play {
     color: #000;
     position: absolute;
-    right: 20px;
+    right: 1vw;
     top: 170px;
     border: none;
     border-radius: 50%;
