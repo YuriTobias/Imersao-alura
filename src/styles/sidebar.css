@@ -1,5 +1,6 @@
 body {
     background-color: #000;
+    font-family: var(--font-dm-sans);
 }
 
 h1 {
@@ -46,7 +47,6 @@ h1 {
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
-    font-family: "DM Sans", sans-serif;
 }
 
 .sidebar nav ul li a:hover,
@@ -74,6 +74,7 @@ h1 {
     text-align: center;
     text-transform: none;
     font-weight: 700;
+    cursor: pointer;
     padding: 20px 20px;
 }
 
@@ -105,19 +106,24 @@ h1 {
     font-size: 12px;
 }
 
-.playlist-section-content .playlist-section-button {
+.playlist-section-content .playlist-section-button,
+.footer-content .footer-button {
     display: flex;
     justify-content: center;
     background-color: #fff;
     color: #000;
-    border: 0px;
+    border: none;
     border-radius: 20px;
     font-size: 12px;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
     padding: 10px;
     margin-top: 6px;
     width: 116px;
+}
+
+.playlist-section-content .playlist-section-button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .sidebar-library .cookies {

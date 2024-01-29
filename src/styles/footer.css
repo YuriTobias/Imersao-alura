@@ -1,0 +1,51 @@
+.footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer-content {
+    background-image: linear-gradient(90deg, #af2896, #509bf5);
+}
+
+.footer-content,
+.footer-information {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px;
+}
+
+.footer-content .footer-information {
+    flex-direction: column;
+}
+
+.footer-information .text {
+    color: #fff;
+}
+
+.footer-information .primary {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-information .secondary {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.footer-content .footer-button {
+    font-size: 14px;
+    cursor: pointer;
+    margin: 12px;
+    padding: 12px 14px;
+    width: 124px;
+}
+
+.footer-content button:hover {
+    transform: scale(1.1);
+}

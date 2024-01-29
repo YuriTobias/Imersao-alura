@@ -4,8 +4,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Spotify - Imersão</title>
-        <link rel="stylesheet" href="reset.css" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./src/styles/reset.css" />
+        <link rel="stylesheet" href="./src/styles/vars.css" />
+        <link rel="stylesheet" href="./src/styles/sidebar.css" />
+        <link rel="stylesheet" href="./src/styles/main-content.css" />
+        <link rel="stylesheet" href="./src/styles/footer.css" />
+        <link rel="stylesheet" href="./src/styles/media-queries.css" />
         <link
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
@@ -23,7 +27,7 @@
                 <div>
                     <div class="logo-spotify">
                         <a href="">
-                            <img src="assets/icons/logo-spotify.png" alt="Logo do spotify" />
+                            <img src="src/assets/icons/logo-spotify.png" alt="Logo do spotify" />
                         </a>
                     </div>
 
@@ -73,5 +77,140 @@
                 </div>
             </div>
         </div>
+
+        <main>
+            <div class="main-container">
+                <nav class="navigation">
+                    <div class="navigation-content">
+                        <button class="arrow-left">
+                            <img src="./src/assets/icons/small-left.png" alt="Left arrow" />
+                        </button>
+                        <button class="arrow-right">
+                            <img src="./src/assets/icons/small-right.png" alt="Right arrow" />
+                        </button>
+                        <div class="navigation-search">
+                            <img src="./src/assets/icons/search.png" alt="" />
+                            <input
+                                id="search-input"
+                                type="text"
+                                maxlength="800"
+                                placeholder="What do you want to listen to?" />
+                        </div>
+                        <div class="navigation-login">
+                            <button class="signup">Sign up</button>
+                            <button class="login">Log in</button>
+                        </div>
+                    </div>
+                </nav>
+                <section class="cards">
+                    <h2 class="cards-title">Browse all</h2>
+                    <div class="cards-grid">
+                        <!-- Card 1 -->
+                        <a href="" class="cards-layout card-1">
+                            <span class="card-title">Podcasts</span>
+                            <img class="card-img" src="./src/assets/playlist/1.jpeg" alt="First card's image" />
+                        </a>
+
+                        <!-- Card 2 -->
+                        <a href="" class="cards-layout card-2">
+                            <span class="card-title">Live Events</span>
+                            <img class="card-img" src="./src/assets/playlist/2.png" alt="First card's image" />
+                        </a>
+
+                        <!-- Card 3 -->
+                        <a href="" class="cards-layout card-3">
+                            <span class="card-title">Made For You</span>
+                            <img class="card-img" src="./src/assets/playlist/3.jpeg" alt="First card's image" />
+                        </a>
+
+                        <!-- Card 4 -->
+                        <a href="" class="cards-layout card-4">
+                            <span class="card-title">New Realeases</span>
+                            <img class="card-img" src="./src/assets/playlist/4.jpeg" alt="First card's image" />
+                        </a>
+
+                        <!-- Card 5 -->
+                        <a href="" class="cards-layout card-5">
+                            <span class="card-title">Summer</span>
+                            <img class="card-img" src="./src/assets/playlist/5.jpeg" alt="First card's image" />
+                        </a>
+
+                        <!-- Card 6 -->
+                        <a href="" class="cards-layout card-6">
+                            <span class="card-title">Brazil</span>
+                            <img class="card-img" src="./src/assets/playlist/6.jpeg" alt="First card's image" />
+                        </a>
+
+                        <!-- Card 7 -->
+                        <a href="" class="cards-layout card-7">
+                            <span class="card-title">Sertanejo</span>
+                            <img class="card-img" src="./src/assets/playlist/7.jpeg" alt="First card's image" />
+                        </a>
+
+                        <!-- Card 8 -->
+                        <a href="" class="cards-layout card-8">
+                            <span class="card-title">In the car</span>
+                            <img class="card-img" src="./src/assets/playlist/8.jpeg" alt="First card's image" />
+                        </a>
+
+                        <!-- Card 9 -->
+                        <a href="" class="cards-layout card-9">
+                            <span class="card-title">Podcasts Charts</span>
+                            <img class="card-img" src="./src/assets/playlist/9.jpeg" alt="First card's image" />
+                        </a>
+
+                        <!-- Card 10 -->
+                        <a href="" class="cards-layout card-10">
+                            <span class="card-title">Brazil Podcast Releases</span>
+                            <img class="card-img" src="./src/assets/playlist/10.jpeg" alt="First card's image" />
+                        </a>
+
+                        <!-- Card 1 -->
+                        <a href="" class="cards-layout card-1">
+                            <span class="card-title">Brazilian Creators</span>
+                            <img class="card-img" src="./src/assets/playlist/1.jpeg" alt="First card's image" />
+                        </a>
+
+                        <!-- Card 2 -->
+                        <a href="" class="cards-layout card-2">
+                            <span class="card-title">Only on Spotify</span>
+                            <img class="card-img" src="./src/assets/playlist/2.png" alt="First card's image" />
+                        </a>
+
+                        <!-- Card 3 -->
+                        <a href="" class="cards-layout card-3">
+                            <span class="card-title">Charts</span>
+                            <img class="card-img" src="./src/assets/playlist/3.jpeg" alt="First card's image" />
+                        </a>
+
+                        <!-- Card 4 -->
+                        <a href="" class="cards-layout card-4">
+                            <span class="card-title">Brazilian Funk</span>
+                            <img class="card-img" src="./src/assets/playlist/4.jpeg" alt="First card's image" />
+                        </a>
+
+                        <!-- Card 5 -->
+                        <a href="" class="cards-layout card-5">
+                            <span class="card-title">Pop</span>
+                            <img class="card-img" src="./src/assets/playlist/5.jpeg" alt="First card's image" />
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <a href="" class="footer-content">
+                <div class="footer-information">
+                    <span class="text secondary">Preview of Spotify</span>
+                    <span class="text primary"
+                        >Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.
+                    </span>
+                </div>
+                <button class="footer-button">
+                    <span>Sign up free</span>
+                </button>
+            </a>
+        </footer>
     </body>
 </html>
