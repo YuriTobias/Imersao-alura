@@ -98,7 +98,8 @@
     font-size: 16px;
 }
 
-.cards {
+.cards,
+.results {
     margin: 12px 0px;
     max-height: 75vh;
     overflow-y: auto;
@@ -107,18 +108,21 @@
     padding: 20px 16px;
 }
 
-.cards-grid a {
+.cards-grid a,
+.results-grid a {
     text-decoration: none;
 }
 
-.cards .cards-title {
+.cards .cards-title,
+.results .results-title {
     color: #fff;
     font-size: 20px;
     font-weight: 700;
     margin: 12px 0px;
 }
 
-.cards .cards-grid {
+.cards .cards-grid,
+.results .results-grid {
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -126,13 +130,14 @@
     padding: 12px 0px;
 }
 
-.cards .cards-layout {
+.cards .cards-layout,
+.results .results-layout {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
     width: 13vw;
-    height: 24vh;
+    height: 28vh;
     overflow: hidden;
     border-radius: 8px;
     padding: 16px;
@@ -192,4 +197,61 @@
 
 .card-10 {
     background-color: #8e66ac;
+}
+
+.results {
+    display: none;
+}
+
+.results .results-layout {
+    background-color: #181818;
+}
+
+.results .results-grid a:hover {
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    background-color: #282828;
+}
+
+.results-layout .artist-img {
+    border-radius: 50%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.results-layout .artist-name {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.results-layout .artist-description {
+    color: #a7a7a7;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.play-artist .fa-play {
+    color: #000;
+    position: absolute;
+    right: 20px;
+    top: 170px;
+    border: none;
+    border-radius: 50%;
+    padding: 16px;
+    font-size: 14px;
+    opacity: 0;
+    background-color: #169c46;
+    transition: all ease 0.4s;
+}
+
+.play-artist:hover .fa-play {
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #1ed760;
+}
+
+.results-layout:hover .play-artist .fa-play {
+    opacity: 1;
+    transform: translateY(-20px);
 }
